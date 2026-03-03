@@ -265,7 +265,7 @@
       }
 
       // Header + Footer
-      loadComponent("app-header", "../components/header.html").then(() => {
+      loadComponent("app-header", "components/header.html").then(() => {
         const pageTitle = document.getElementById("pageTitle");
         if (pageTitle) pageTitle.textContent = "Dashboard";
 
@@ -273,7 +273,7 @@
         if (userName) userName.textContent = "Admin";
       });
 
-      loadComponent("app-footer", "../components/footer.html");
+      loadComponent("app-footer", "components/footer.html");
 
       // Proteção simples
       if (localStorage.getItem("auth") !== "true") {

@@ -244,11 +244,11 @@
         el.innerHTML = await res.text();
       }
 
-      loadComponent("app-header", "../components/header.html").then(() => {
+      loadComponent("app-header", "components/header.html").then(() => {
         const pageTitle = document.getElementById("pageTitle");
         if (pageTitle) pageTitle.textContent = "Cadastrar Usuário";
       });
-      loadComponent("app-footer", "../components/footer.html");
+      loadComponent("app-footer", "components/footer.html");
 
       // Proteção simples
       if (localStorage.getItem("auth") !== "true") {
